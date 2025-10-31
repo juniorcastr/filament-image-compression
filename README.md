@@ -1,43 +1,35 @@
-# Filament Image Compression Plugin
+# Filament Image Compression
 
-Plugin Filament para compressão automática de imagens com conversão para WebP.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/juniorcastr/filament-image-compression.svg?style=flat-square)](https://packagist.org/packages/juniorcastr/filament-image-compression)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/juniorcastr/filament-image-compression/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/juniorcastr/filament-image-compression/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/juniorcastr/filament-image-compression/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/juniorcastr/filament-image-compression/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/juniorcastr/filament-image-compression.svg?style=flat-square)](https://packagist.org/packages/juniorcastr/filament-image-compression)
+[![License](https://img.shields.io/packagist/l/juniorcastr/filament-image-compression.svg?style=flat-square)](https://packagist.org/packages/juniorcastr/filament-image-compression)
 
-## Características
+A powerful Filament plugin that automatically compresses and converts uploaded images to WebP format, reducing file sizes while maintaining quality. Perfect for optimizing storage and improving website performance.
 
-- 🖼️ **Compressão automática**: Todas as imagens são automaticamente comprimidas ao serem enviadas
-- 🔄 **Conversão para WebP**: Converte automaticamente JPEG, PNG, GIF e BMP para WebP
-- ⚙️ **Configurável**: Permite ajustar qualidade e dimensões máximas
-- 🎯 **Múltiplos formatos**: Suporte para diferentes tipos de upload (avatar, múltiplas imagens, etc.)
-- 📦 **Fácil integração**: Funciona como extensão dos componentes FileUpload do Filament
+## Features
 
-## Instalação
+- 🚀 **Automatic Compression**: Seamlessly compresses images on upload
+- 🖼️ **WebP Conversion**: Converts images to modern WebP format for better compression
+- ⚙️ **Configurable Settings**: Customize compression quality and maximum dimensions
+- 📱 **Multiple Formats**: Supports JPEG, PNG, GIF, BMP, and WebP input formats
+- 🎯 **Easy Integration**: Drop-in replacement for Filament's FileUpload component
+- 🔧 **Flexible Configuration**: Per-component or global configuration options
+- 📊 **Compression Analytics**: Track compression ratios and file size savings
 
-### 1. Instalar dependências
+## Installation
 
-```bash
-composer require intervention/image:^3.0
-```
-
-### 2. Adicionar o plugin ao composer.json
-
-```json
-{
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./packages/filament-image-compression"
-        }
-    ],
-    "require": {
-        "condosmart/filament-image-compression": "*"
-    }
-}
-```
-
-### 3. Instalar o plugin
+You can install the package via composer:
 
 ```bash
-composer require condosmart/filament-image-compression
+composer require juniorcastr/filament-image-compression
+```
+
+Optionally, you can publish the config file with:
+
+```bash
+php artisan vendor:publish --tag="filament-image-compression-config"
 ```
 
 ## Uso
@@ -83,7 +75,7 @@ FileUpload::make('banner')
 ### Uso Direto do Componente
 
 ```php
-use CondoSmart\FilamentImageCompression\Components\CompressedFileUpload;
+use JuniorCastr\FilamentImageCompression\Components\CompressedFileUpload;
 
 // Uso básico
 CompressedFileUpload::make('image')

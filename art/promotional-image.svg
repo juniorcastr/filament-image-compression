@@ -1,0 +1,161 @@
+<svg width="2560" height="1440" viewBox="0 0 2560 1440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#334155;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="2560" height="1440" fill="url(#backgroundGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="200" cy="200" r="100" fill="#f59e0b" opacity="0.1"/>
+  <circle cx="2360" cy="1240" r="150" fill="#d97706" opacity="0.08"/>
+  <circle cx="2200" cy="300" r="80" fill="#f59e0b" opacity="0.12"/>
+  
+  <!-- Main content container -->
+  <rect x="320" y="240" width="1920" height="960" rx="24" fill="url(#cardGradient)" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Header section -->
+  <rect x="360" y="280" width="1840" height="120" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  
+  <!-- Filament logo placeholder -->
+  <circle cx="420" cy="340" r="30" fill="#f59e0b"/>
+  <text x="420" y="348" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" font-weight="bold">F</text>
+  
+  <!-- Title -->
+  <text x="480" y="330" fill="#f8fafc" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Filament Image Compression</text>
+  <text x="480" y="370" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="24">Automatic WebP conversion and compression for Filament uploads</text>
+  
+  <!-- Features section -->
+  <g transform="translate(360, 440)">
+    <!-- Feature 1: Compression -->
+    <rect x="0" y="0" width="560" height="200" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#10b981"/>
+    <text x="40" y="47" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">🚀</text>
+    <text x="80" y="35" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Automatic Compression</text>
+    <text x="80" y="60" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Seamlessly compresses images</text>
+    <text x="80" y="80" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">on upload with configurable</text>
+    <text x="80" y="100" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">quality settings</text>
+    
+    <!-- Before/After visualization -->
+    <rect x="20" y="120" width="80" height="60" rx="4" fill="#ef4444" opacity="0.8"/>
+    <text x="60" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">JPEG</text>
+    <text x="60" y="160" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">2.5MB</text>
+    
+    <path d="M 110 150 L 140 150" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrowhead)"/>
+    
+    <rect x="150" y="120" width="80" height="60" rx="4" fill="#10b981" opacity="0.8"/>
+    <text x="190" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">WebP</text>
+    <text x="190" y="160" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">0.8MB</text>
+  </g>
+  
+  <g transform="translate(960, 440)">
+    <!-- Feature 2: WebP Conversion -->
+    <rect x="0" y="0" width="560" height="200" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#8b5cf6"/>
+    <text x="40" y="47" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">🖼️</text>
+    <text x="80" y="35" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="bold">WebP Conversion</text>
+    <text x="80" y="60" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Converts images to modern</text>
+    <text x="80" y="80" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">WebP format for better</text>
+    <text x="80" y="100" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">compression and performance</text>
+    
+    <!-- Format icons -->
+    <rect x="20" y="120" width="40" height="30" rx="4" fill="#3b82f6" opacity="0.8"/>
+    <text x="40" y="138" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">JPG</text>
+    
+    <rect x="70" y="120" width="40" height="30" rx="4" fill="#ef4444" opacity="0.8"/>
+    <text x="90" y="138" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">PNG</text>
+    
+    <rect x="120" y="120" width="40" height="30" rx="4" fill="#f59e0b" opacity="0.8"/>
+    <text x="140" y="138" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">GIF</text>
+    
+    <path d="M 170 135 L 200 135" stroke="#f59e0b" stroke-width="2"/>
+    
+    <rect x="210" y="120" width="50" height="30" rx="4" fill="#10b981" opacity="0.8"/>
+    <text x="235" y="138" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">WebP</text>
+  </g>
+  
+  <g transform="translate(360, 680)">
+    <!-- Feature 3: Easy Integration -->
+    <rect x="0" y="0" width="560" height="200" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#f59e0b"/>
+    <text x="40" y="47" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">🎯</text>
+    <text x="80" y="35" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Easy Integration</text>
+    <text x="80" y="60" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Drop-in replacement for</text>
+    <text x="80" y="80" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Filament's FileUpload</text>
+    <text x="80" y="100" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">component</text>
+    
+    <!-- Code snippet visualization -->
+    <rect x="20" y="120" width="520" height="60" rx="4" fill="#0f172a" stroke="#374151" stroke-width="1"/>
+    <text x="30" y="140" fill="#10b981" font-family="Courier, monospace" font-size="12">CompressedFileUpload::make('image')</text>
+    <text x="30" y="155" fill="#cbd5e1" font-family="Courier, monospace" font-size="12">    ->compressed()</text>
+    <text x="30" y="170" fill="#cbd5e1" font-family="Courier, monospace" font-size="12">    ->directory('uploads')</text>
+  </g>
+  
+  <g transform="translate(960, 680)">
+    <!-- Feature 4: Performance -->
+    <rect x="0" y="0" width="560" height="200" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#06b6d4"/>
+    <text x="40" y="47" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">📊</text>
+    <text x="80" y="35" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Performance Boost</text>
+    <text x="80" y="60" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Up to 60% file size reduction</text>
+    <text x="80" y="80" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Faster loading times</text>
+    <text x="80" y="100" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Better user experience</text>
+    
+    <!-- Performance chart -->
+    <rect x="20" y="120" width="200" height="60" rx="4" fill="#0f172a" stroke="#374151" stroke-width="1"/>
+    <rect x="30" y="160" width="60" height="15" fill="#ef4444" opacity="0.8"/>
+    <text x="95" y="170" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="10">Before: 100%</text>
+    <rect x="30" y="140" width="24" height="15" fill="#10b981" opacity="0.8"/>
+    <text x="60" y="150" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="10">After: 40%</text>
+  </g>
+  
+  <!-- Bottom section with installation -->
+  <rect x="360" y="920" width="1840" height="240" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  
+  <!-- Installation title -->
+  <text x="1280" y="960" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="32" font-weight="bold">Quick Installation</text>
+  
+  <!-- Installation command -->
+  <rect x="560" y="980" width="1440" height="80" rx="8" fill="#0f172a" stroke="#374151" stroke-width="2"/>
+  <text x="580" y="1010" fill="#10b981" font-family="Courier, monospace" font-size="24">$</text>
+  <text x="610" y="1010" fill="#f8fafc" font-family="Courier, monospace" font-size="24">composer require juniorcastr/filament-image-compression</text>
+  <text x="580" y="1040" fill="#cbd5e1" font-family="Courier, monospace" font-size="18">Ready to use in seconds! 🚀</text>
+  
+  <!-- GitHub and Packagist badges -->
+  <rect x="720" y="1080" width="120" height="40" rx="20" fill="#f59e0b"/>
+  <text x="780" y="1105" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="16" font-weight="bold">GitHub</text>
+  
+  <rect x="860" y="1080" width="120" height="40" rx="20" fill="#10b981"/>
+  <text x="920" y="1105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Packagist</text>
+  
+  <rect x="1000" y="1080" width="120" height="40" rx="20" fill="#8b5cf6"/>
+  <text x="1060" y="1105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Docs</text>
+  
+  <!-- Filament branding -->
+  <text x="2200" y="1140" text-anchor="end" fill="#64748b" font-family="Arial, sans-serif" font-size="18">Made for Filament v4</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>
