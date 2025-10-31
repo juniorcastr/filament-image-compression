@@ -1,33 +1,81 @@
 {
-    "name": "condosmart/filament-image-compression",
-    "description": "Plugin Filament para compressão automática de imagens com conversão para WebP",
+    "name": "juniorcastr/filament-image-compression",
+    "description": "Automatic image compression and WebP conversion for Filament file uploads",
+    "keywords": [
+        "filament",
+        "laravel",
+        "image",
+        "compression",
+        "webp",
+        "optimization",
+        "upload",
+        "performance"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "CondoSmart",
-            "email": "dev@condosmart.com"
+            "name": "Junior Castro",
+            "email": "juniorcastrz@gmail.com",
+            "homepage": "https://github.com/juniorcastr",
+            "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/juniorcastr/filament-image-compression",
+    "support": {
+        "issues": "https://github.com/juniorcastr/filament-image-compression/issues",
+        "source": "https://github.com/juniorcastr/filament-image-compression",
+        "docs": "https://github.com/juniorcastr/filament-image-compression#readme"
+    },
     "require": {
         "php": "^8.1",
         "filament/filament": "^4.0",
         "intervention/image": "^3.0",
-        "spatie/laravel-package-tools": "^1.0"
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-arch": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "CondoSmart\\FilamentImageCompression\\": "src/"
+            "JuniorCastr\\FilamentImageCompression\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JuniorCastr\\FilamentImageCompression\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@composer run prepare",
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": [
+            "@composer run prepare",
+            "@php vendor/bin/pint"
+        ],
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "CondoSmart\\FilamentImageCompression\\FilamentImageCompressionServiceProvider"
+                "JuniorCastr\\FilamentImageCompression\\FilamentImageCompressionServiceProvider"
             ]
         }
-    }
-},
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }

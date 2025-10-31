@@ -1,0 +1,77 @@
+{
+  "name": "filament-image-compression",
+  "title": "Filament Image Compression",
+  "description": "Automatic image compression and WebP conversion for Filament file uploads",
+  "long_description": "A powerful Filament plugin that automatically compresses and converts uploaded images to WebP format, reducing file sizes while maintaining quality. Perfect for optimizing storage and improving website performance.",
+  "author": {
+    "name": "Junior Castro",
+    "email": "juniorcastrz@gmail.com",
+    "url": "https://github.com/juniorcastr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juniorcastr/filament-image-compression"
+  },
+  "homepage": "https://github.com/juniorcastr/filament-image-compression",
+  "documentation": "https://github.com/juniorcastr/filament-image-compression#readme",
+  "keywords": [
+    "filament",
+    "laravel",
+    "image",
+    "compression",
+    "webp",
+    "optimization",
+    "upload",
+    "performance"
+  ],
+  "categories": [
+    "form-components",
+    "utilities"
+  ],
+  "license": "MIT",
+  "minimum_php": "8.1",
+  "minimum_laravel": "10.0",
+  "minimum_filament": "4.0",
+  "features": [
+    "Automatic image compression on upload",
+    "WebP format conversion for better compression",
+    "Configurable quality and dimension settings",
+    "Support for JPEG, PNG, GIF, BMP input formats",
+    "Drop-in replacement for FileUpload component",
+    "Multiple upload optimization",
+    "Avatar-specific compression settings",
+    "Compression analytics and ratio tracking"
+  ],
+  "installation": {
+    "composer": "composer require juniorcastr/filament-image-compression",
+    "config": "php artisan vendor:publish --tag=\"filament-image-compression-config\""
+  },
+  "usage_examples": [
+    {
+      "title": "Basic Usage",
+      "code": "CompressedFileUpload::make('image')\n    ->label('Profile Image')\n    ->directory('profiles')"
+    },
+    {
+      "title": "Custom Settings",
+      "code": "CompressedFileUpload::makeWithSettings('banner', 1920, 85)\n    ->label('Banner Image')\n    ->directory('banners')"
+    },
+    {
+      "title": "Using Macros",
+      "code": "FileUpload::make('image')\n    ->compressed()\n    ->directory('uploads')"
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "art/promotional-image.svg",
+      "title": "Plugin Overview",
+      "description": "Overview of Filament Image Compression features"
+    }
+  ],
+  "tags": [
+    "image-processing",
+    "webp-conversion",
+    "file-upload",
+    "performance-optimization",
+    "storage-optimization"
+  ]
+}
